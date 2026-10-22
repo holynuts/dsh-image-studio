@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-image-studio",
+  "name": "dsh-image-studio",
   "version": "0.3.1",
-  "private": true,
   "type": "module",
   "description": "Generate images with Nano Banana, ChatGPT Image, fal, Replicate or any OpenAI-compatible endpoint — every result lands in a searchable library, and the panel lets you compare one prompt across models.",
   "icon": "icon.svg",
@@ -20,7 +19,8 @@
     "icon.svg",
     "README.md",
     "SPEC.md",
-    "docs"
+    "docs",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
@@ -42,5 +42,25 @@
   "engines": {
     "node": ">=20"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "holynuts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holynuts/dsh-image-studio.git"
+  },
+  "homepage": "https://github.com/holynuts/dsh-image-studio#readme",
+  "bugs": {
+    "url": "https://github.com/holynuts/dsh-image-studio/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-generation",
+    "image-studio",
+    "nano-banana",
+    "gemini",
+    "fal",
+    "replicate"
+  ]
 }

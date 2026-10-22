@@ -6,7 +6,25 @@
 - Agent 通过 5 个工具调用同一套能力；你和 Agent 产生的结果进同一个图库。
 - 零运行时依赖：宿主侧只用 Node 内置模块，浏览器侧只用 React（Harness 自带）。
 
-已安装到当前 `desktop` profile（`@local/dsh-image-studio` 0.3.1，链接自本目录）。刷新一次 Harness Web 界面即可看到侧边栏图标。
+## 安装
+
+这是一个 DeepSeek Harness **bundle 插件**（`package.json` 里声明了 `dsh.bundle`），无需构建、无运行时依赖。
+
+```bash
+git clone https://github.com/holynuts/dsh-image-studio.git
+```
+
+然后把仓库目录作为一个 bundle 装进你的 profile（Harness 的插件管理 → Install bundle → 选这个目录），或在 profile 的 `cordis.patch.yml` 里插入一行：
+
+```yaml
+- insert:
+    - id: ui-image-studio
+      name: 'dsh-image-studio'
+```
+
+装好后刷新一次 Harness Web 界面，侧边栏就会出现 **图像工坊** 图标。
+
+> API Key 不写在本插件的设置里：它走 Harness 的凭据服务（每个服务商一条 ref，优先复用你已配置的 `OPENAI_API_KEY` / `GEMINI_API_KEY` 等）。详见 [§2](#2-api-key-放在哪设计选择)。
 
 ---
 

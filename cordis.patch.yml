@@ -4,4 +4,4 @@
 # ./client as the browser half (sidebar icon + main-column panel).
 - insert:
     - id: ui-image-studio
-      name: '@local/dsh-image-studio'
+      name: 'dsh-image-studio'
