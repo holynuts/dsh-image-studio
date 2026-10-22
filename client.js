@@ -14,7 +14,7 @@
  * No polling: bootstrap once, then every mutation is an explicit user action.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-image-studio',
+  id: 'dsh-image-studio',
   factory(require) {
     const React = require('react')
     const h = React.createElement

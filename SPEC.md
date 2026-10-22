@@ -1,6 +1,6 @@
 # Image Studio — build contract (internal)
 
-Package: `@local/dsh-image-studio` · row id: `ui-image-studio` · panel key: `image-studio`
+Package: `dsh-image-studio` · row id: `ui-image-studio` · panel key: `image-studio`
 Zero runtime dependencies. Node 22, ESM (`"type": "module"`). No TypeScript, no bundler, no JSX.
 
 The plugin has two halves:
@@ -250,7 +250,7 @@ Query semantics: `q` is a case-insensitive substring over `prompt`, `title`, `no
 
 ```js
 window.__ModuleLoader__.load({
-  id: '@local/dsh-image-studio',
+  id: 'dsh-image-studio',
   factory(require) {
     const React = require('react')
     // components…
