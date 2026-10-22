@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Image Studio">
+  <defs>
+    <linearGradient id="is-bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="0.55" stop-color="#B44BFF"/>
+      <stop offset="1" stop-color="#FFB86B"/>
+    </linearGradient>
+    <linearGradient id="is-shine" x1="20" y1="12" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#is-bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+  <path d="M19.5 40.5V22.5A4.5 4.5 0 0 1 24 18h16a4.5 4.5 0 0 1 4.5 4.5v13"
+        stroke="url(#is-shine)" stroke-width="2.7" stroke-linecap="round"/>
+  <circle cx="24.5" cy="25.5" r="2.9" fill="url(#is-shine)"/>
+  <path d="M18.5 39.5l7.6-7.2a2 2 0 0 1 2.8.1l4.4 4.6 2.6-2.3a2 2 0 0 1 2.7.1l4.4 4.7"
+        stroke="url(#is-shine)" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45.6 41.1l1.7 4.1 4.1 1.7-4.1 1.7-1.7 4.1-1.7-4.1-4.1-1.7 4.1-1.7 1.7-4.1z" fill="#FFFFFF"/>
+</svg>

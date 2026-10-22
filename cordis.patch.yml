@@ -1,0 +1,7 @@
+# Image Studio: host tools + /api/image-studio routes + the Web panel.
+#
+# The row mounts the package once; the package's `dsh.client` declaration loads
+# ./client as the browser half (sidebar icon + main-column panel).
+- insert:
+    - id: ui-image-studio
+      name: '@local/dsh-image-studio'

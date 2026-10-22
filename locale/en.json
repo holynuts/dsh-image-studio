@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Image Studio",
+    "description": "Generate images with Nano Banana, ChatGPT Image, fal, Replicate or any OpenAI-compatible endpoint. Every result lands in a searchable library with its prompt, and the panel lets you compare one prompt across models."
+  }
+}

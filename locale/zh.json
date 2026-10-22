@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "图像工坊",
+    "description": "用 Nano Banana、ChatGPT Image、fal、Replicate 或任意 OpenAI 兼容接口生成图片。每张成品自动入库并保留提示词，还能把同一个提示词发给多个模型对比效果。"
+  }
+}
