@@ -4,6 +4,8 @@
 
 ![Image Studio panel](docs/panel.png)
 
+*Illustration generated with Image Studio itself — not a UI screenshot.*
+
 A DeepSeek Harness plugin that lets **both the agent and you call several image APIs**, storing every generation — prompt, parameters and result — in a **built-in library**, and gives you a dedicated web panel for trying prompts and comparing one prompt across models.
 
 - A new **Image Studio** icon in the sidebar: click to open, it never takes over the conversation area.
@@ -175,7 +177,7 @@ Verified so far:
 - Live (this profile): the plugin installs and activates; `/health`, `/bootstrap`, `/generate` (mock), `/items`, `/file`, `/download`, `/credentials` (written then cleared), `/credentials/test` (really hits OpenAI and reports 401 correctly), `/compare`, `/runs` all pass.
 - **Vertex live**: the machine's ADC was exchanged for an access token; all four models passed connectivity probes; `gemini-nano-banana-2.1` really produced a 1024×1024 PNG (15.1 s, stored and retrievable via `/file`).
 - Real keys for `gemini` / `openai` / `fal` / `replicate` were not provided, so their **success paths** are not verified online; the Gemini Interactions response parsing is written as a tolerant scan of the documented shapes (`output_image`, `steps[].content[]`, `inline_data`).
-- The panel's **visual rendering** was verified after the fact by a real screenshot session; slot registration (`sidebar.panellist#image-studio`, `main#image-studio`) is active, and the client JS passes a syntax check plus a factory/registration smoke test. If layout needs a tweak, edit the CSS block in `client.js`.
+- The panel has been opened and used in a live session; slot registration (`sidebar.panellist#image-studio`, `main#image-studio`) is active, and the client JS passes a syntax check plus a factory/registration smoke test. If the first open shows a layout problem, edit the CSS block in `client.js`. The README banner is an illustration produced by the plugin, not a screenshot of the panel.
 
 The Vertex ADC path is implemented like DSH's own credential handling and is unit-tested; it passed live once the key was moved out of the Documents folder (the 1024×1024 above came from Vertex).
 

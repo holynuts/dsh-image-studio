@@ -4,6 +4,8 @@
 
 ![图像工坊面板](docs/panel.png)
 
+*首屏图由插件自身生成，是示意图而非界面截图。*
+
 一个 DeepSeek Harness 插件：让 **Agent 和人都能调用多家图片 API**，把每一次生成连同提示词、参数和成品一起存进**自带图库**，并在一个专门的 Web 面板里试提示词、做同题多模型对比。
 
 - 侧边栏新增 **图像工坊** 图标，点开即用，不占对话区。
@@ -175,7 +177,7 @@ npm test        # 49 个测试：图库 15、适配器 16、服务/工具 7、Ve
 - 实机（当前 profile）：插件安装并激活；`/health`、`/bootstrap`、`/generate`（mock）、`/items`、`/file`、`/download`、`/credentials`（真实写入后清除）、`/credentials/test`（真实打到 OpenAI 并正确报 401）、`/compare`、`/runs` 全部通过。
 - **Vertex 实机**：用你机器上的 ADC 成功换到 access token；四个模型全部通过连通性探测；`gemini-nano-banana-2.1` 真实生成一张 1024×1024 PNG（15.1s，入库并可从 `/file` 取回）。
 - 真实密钥未提供，因此 `gemini` / `openai` / `fal` / `replicate` 的**成功路径**未做线上实测；Gemini Interactions API 的响应解析按官方文档写成容错扫描（`output_image`、`steps[].content[]`、`inline_data` 多形态）。
-- 面板的**视觉渲染**已在后续会话中用真实截图验证；slot 注册（`sidebar.panellist#image-studio`、`main#image-studio`）均 active，客户端 JS 通过语法检查与工厂/注册冒烟。若第一次打开有布局问题，改 `client.js` 的 CSS 区块即可。
+- 面板已在实机会话中打开使用；slot 注册（`sidebar.panellist#image-studio`、`main#image-studio`）均 active，客户端 JS 通过语法检查与工厂/注册冒烟。若第一次打开有布局问题，改 `client.js` 的 CSS 区块即可。README 首屏图由插件自身生成，是示意图而非界面截图。
 
 Vertex 的 ADC 路径已按 DSH 同款凭据实现并有单测覆盖；把密钥移出「文稿」目录后实测通过（上面的 1024×1024 就是 Vertex 出的）。
 
