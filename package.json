@@ -20,7 +20,8 @@
     "README.md",
     "SPEC.md",
     "docs",
-    "LICENSE"
+    "LICENSE",
+    "README.zh-CN.md"
   ],
   "dsh": {
     "bundle": {
